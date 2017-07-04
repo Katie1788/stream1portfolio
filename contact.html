@@ -3,8 +3,8 @@
    <head>
    <meta charset="UTF-">
      <title>Contact</title>
-     <link href='http://fonts.googleapis.com/css?family=Palanquin' rel='stylesheet' type='text/css'>
-
+     <link href='http://fonts.googleapis.com/css?family=Palanquin' rel='stylesheet' type='text/css'/>
+     <script src="https://use.fontawesome.com/5a95604da2.js"></script>
      <style type="text/css">
       body{
       	font-family: 'Palanquin', sans-serif;
@@ -12,20 +12,21 @@
 
       #container{
       	width: 400px;
-      	margin: auto;
+      	margin: 150px;
+      	margin-left: 35%;
       }
 
      #input_types{
      	background-color: whitesmoke;
      }
      .submit{
-     	margin-bottom: 10xpx;
+     	margin-bottom: 10px;
      	margin-left: 100px;
      }
      .label{
      	display: inline-block;
-     	float: left;
-     	clear: left;
+     	float: center;
+     	clear: center;
      	text-align: left;
      	width: 100px;
      	margin-top: 5px;
@@ -80,20 +81,43 @@
             background-attachment: fixed;
 
         }
+        .nav{
+            margin: 0;
+            text-align: center;
+        }
+        .nav li{
+            display: inline-block;
+            text-align: center;
+            zoom: 1;
+            *display: inline;
+
+        }
+        .nav a{
+            display: inline-block;
+        }
+
      </style>
      </head>
      <body>
+     <ul class="nav">
+       <li><a href="/">Instagram</a></li>
+       <i class="fa fa-instagram" aria-hidden="true"></i>
+       <li><a href="/">Gmail</a></li>
+       <i class="fa fa-envelope" aria-hidden="true"></i>
+       <li><a href="/">Github</a></li>
+       <i class="fa fa-github" aria-hidden="true"></i>
+       </ul>
+
        <div id="container"> 
        
          <form>
            <fieldset>
-             <legend>Contact</legend>
-
+            
              <label for="name" class="field">Name</label>
              <input type="text" id="name" placeholder="enter name" name="name" autocomplete="on" autofocus placeholder="name"/>
 
-             <label for="email">Email</label>
-             <input id="email"/>
+             <label for="query">Query</label>
+             <input id="query"/>
 
              
              </fieldset>
@@ -102,6 +126,8 @@
          </div>
         
          </body>
+         <script src='http://code.jquery.com/jquery.min.js'></script>
+         <script src='bootstrap/js/bootstrap.min.js'></script>
          </html>
 
   
